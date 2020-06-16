@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-body">
+
+    <div class="row">
+      <div class="col-6">
+        <label>Time range</label>
+        <input nbInput
+               fullWidth
+               [(ngModel)]="timeRange"
+               [nbDatepicker]="formpicker">
+        <nb-rangepicker #formpicker></nb-rangepicker>
+      </div>
+      <div class="col-6">
+        {{timeRange | json}}
+      </div>
+    </div>
+  </div>
+</div>
